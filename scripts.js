@@ -4,4 +4,4 @@ const getHelp = function(){
     alert('( ͡° ͜ʖ ͡°)');
 }
 
-help_button.addEventListener('click', getHelp());
+help_button.addEventListener('click', getHelp);
