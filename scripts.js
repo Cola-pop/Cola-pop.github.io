@@ -1,6 +1,6 @@
 var help_button = document.getElementById('get_help');
 
-const getHelp = function(){
+function getHelp(){
     alert('( ͡° ͜ʖ ͡°)');
 }
 
