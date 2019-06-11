@@ -6,12 +6,13 @@ body, html {
 body {
   font-family: 'Montserrat';
   margin: 0;
+  background-color: #9d01cc;
 }
 
 body #bg {
-  -webkit-clip-path: polygon(0 0, 33% 100%, 100% 66%);
-  clip-path: polygon(0 0, 33% 100%, 100% 66%);
-  background-color: #5e0699;
+  -webkit-clip-path: polygon(100% 0, 100% 63%, 53% 100%, 14% 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 63%, 53% 100%, 14% 100%, 0 0);
+  background-color: #4b0779;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -26,6 +27,10 @@ body header a {
   text-transform: uppercase;
 }
 
+body #name {
+  color: #ff00ea;
+}
+
 main section#card {
   background: #FFFFFF;
   padding: 20px;
@@ -34,6 +39,7 @@ main section#card {
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 80%;
+  border: 5px solid #ff00ea;
 }
 
 main section#card ul {
@@ -51,7 +57,7 @@ main section#card ul li span {
   content: ' ';
   width: 30px;
   height: 30px;
-  background-color: #c372f9;
+  background-color: #b557f5;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -78,7 +84,7 @@ main section#primary p {
   font-size: 4em;
 }
 
-main section#primary a {
+main section#primary a#get_help {
   color: black;
   border-radius: 15px;
   text-decoration: none;
