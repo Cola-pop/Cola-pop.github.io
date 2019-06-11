@@ -29,6 +29,7 @@ body header a {
 
 body #name {
   color: #ff00ea;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 main section#card {
@@ -40,6 +41,8 @@ main section#card {
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 80%;
   border: 5px solid #ff00ea;
+  -webkit-box-shadow: 7px 14px #33002f;
+          box-shadow: 7px 14px #33002f;
 }
 
 main section#card ul {
@@ -78,10 +81,12 @@ main section#primary h1 {
   font-size: 3em;
   margin-top: 10px;
   text-transform: uppercase;
+  text-shadow: 1px 1px 2px black, 0 0 25px #ff00ea, 0 0 5px darkblue;
 }
 
 main section#primary p {
   font-size: 4em;
+  text-shadow: 1px 1px 2px black, 0 0 25px #ff00ea, 0 0 5px darkblue;
 }
 
 main section#primary a#get_help {
@@ -96,5 +101,7 @@ main section#primary a#get_help {
   margin: 50px auto 0 auto;
   padding: 15px;
   border: 5px solid #ff00ea;
+  -webkit-box-shadow: 7px 14px #33002f;
+          box-shadow: 7px 14px #33002f;
 }
 /*# sourceMappingURL=main.css.map */
