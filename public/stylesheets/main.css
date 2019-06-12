@@ -6,13 +6,18 @@ body, html {
 body {
   font-family: 'Montserrat';
   margin: 0;
-  background-color: #9d01cc;
+  background-color: #9305be;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9305be), to(#dd7afc));
+  background-image: linear-gradient(#9305be, #dd7afc);
+  height: 200%;
 }
 
 body #bg {
   -webkit-clip-path: polygon(100% 0, 100% 63%, 53% 100%, 14% 100%, 0 0);
           clip-path: polygon(100% 0, 100% 63%, 53% 100%, 14% 100%, 0 0);
-  background-color: #4b0779;
+  background-color: #3e0464;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -41,8 +46,8 @@ main section#card {
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 80%;
   border: 5px solid #ff00ea;
-  -webkit-box-shadow: 7px 14px #33002f;
-          box-shadow: 7px 14px #33002f;
+  -webkit-box-shadow: 5px 10px #33002f;
+          box-shadow: 5px 10px #33002f;
 }
 
 main section#card ul {
@@ -101,7 +106,7 @@ main section#primary a#get_help {
   margin: 50px auto 0 auto;
   padding: 15px;
   border: 5px solid #ff00ea;
-  -webkit-box-shadow: 7px 14px #33002f;
-          box-shadow: 7px 14px #33002f;
+  -webkit-box-shadow: 5px 10px #33002f;
+          box-shadow: 5px 10px #33002f;
 }
 /*# sourceMappingURL=main.css.map */
