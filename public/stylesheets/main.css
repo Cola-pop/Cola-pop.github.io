@@ -43,9 +43,9 @@ main section#card {
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 80%;
-  border: 5px solid #ff00ea;
-  -webkit-box-shadow: 5px 10px #33002f;
-          box-shadow: 5px 10px #33002f;
+  border: 5px solid #4451ff;
+  -webkit-box-shadow: 5px 10px rgba(0, 8, 119, 0.3);
+          box-shadow: 5px 10px rgba(0, 8, 119, 0.3);
 }
 
 main section#card ul {
@@ -93,7 +93,7 @@ main section#primary p {
 }
 
 main section#primary a#get_help {
-  color: #000877;
+  color: rgba(0, 8, 119, 0.3);
   border-radius: 15px;
   text-decoration: none;
   text-transform: uppercase;
@@ -103,8 +103,8 @@ main section#primary a#get_help {
   text-align: center;
   margin: 50px auto 0 auto;
   padding: 15px;
-  border: 5px solid #ff00ea;
-  -webkit-box-shadow: 5px 10px #33002f;
-          box-shadow: 5px 10px #33002f;
+  border: 5px solid #4451ff;
+  -webkit-box-shadow: 5px 10px rgba(0, 8, 119, 0.3);
+          box-shadow: 5px 10px rgba(0, 8, 119, 0.3);
 }
 /*# sourceMappingURL=main.css.map */
