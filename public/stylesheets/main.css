@@ -24,13 +24,6 @@ body #bg {
           animation: blink .5s step-end infinite alternate;
 }
 
-body header a {
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 35px;
-  display: block;
-}
-
 main {
   padding-top: 75px;
 }
