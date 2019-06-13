@@ -5,7 +5,7 @@ $colors: (
   primary-trans: rgba(68, 81, 255, 0.1),
   primary-light: lighten(#4451ff, 40%),
   primary-dark: darken(rgba(68, 81, 255, 0.3), 40%),
-  accent: #FFF6BB,
+  accent: rgba(255, 246, 187, 0.35),
   border: #ff00ea,
   border-dark: darken(#ff00ea, 40%),
   default_color: #9305be,
@@ -26,7 +26,8 @@ body, html{
 body{
   font-family: 'Montserrat';
   margin: 0;
-  background-image: url(/public/images/landing.jpg);
+  // background-image: url(/public/images/landing.jpg);
+  background-color: black;
 	background-size: cover;
 	background-position: center;
   // background-color: color(default_color);
@@ -57,8 +58,9 @@ main{
 padding-top: 75px;
 
   section#card{
-    background: #FFFFFF;
+    background: color(primary-dark);
     padding: 20px;
+    text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary), 0 0 5px color(primary);
     margin: 1em auto;
     border-radius: $borders;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -79,7 +81,7 @@ padding-top: 75px;
           content: ' ';
           width: 30px;
           height: 30px;
-          background-color: color(primary-light);
+          background-color: color(primary-dark);
           border-radius: 50%;
           margin-right: 10px;
         }
@@ -116,7 +118,8 @@ padding-top: 75px;
       text-decoration: none;
       text-transform: uppercase;
       font-weight: bold;
-      background-color: color(accent);
+      background-color: color(primary-dark);
+      text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary), 0 0 5px color(primary);
       display: block;
       text-align: center;
       margin: 50px auto 0 auto;
