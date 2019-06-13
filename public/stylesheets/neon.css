@@ -13,10 +13,11 @@ html,body{
     bottom: 0;
 }
 
+/* ff4444 */
 .logo b{
     font: 100 10vh "Vibur";
     color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #4451ff, 0 0 0.5em #4451ff, 0 0 0.1em #4451ff, 0 10px 3px #000;
 }
 .logo b span{
     animation: blink linear infinite 2.5s;

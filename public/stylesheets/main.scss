@@ -25,10 +25,13 @@ body, html{
 body{
   font-family: 'Montserrat';
   margin: 0;
-  background-color: color(default_color);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: linear-gradient(color(default_color), color(default_color_light));
+  background-image: url(/public/images/landing.jpg);
+	background-size: cover;
+	background-position: center;
+  // background-color: color(default_color);
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-image: linear-gradient(color(default_color), color(default_color_light));
 
   #bg{
     clip-path: polygon(100% 0, 100% 63%, 53% 100%, 14% 100%, 0 0);
