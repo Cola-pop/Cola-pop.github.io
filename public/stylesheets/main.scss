@@ -85,9 +85,11 @@ main{
   
   div#spaceman{
     animation-name: floating;
-    animation-duration: 3s;
+    animation-duration: 4.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    padding-left: 100px;
+    z-index: 2;
   }
 
   @keyframes floating {
