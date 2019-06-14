@@ -1,6 +1,4 @@
 body {
-  /* background-color: #17182f; */
-  /* background-color: #2127ca; */
   background: rgb(26, 188, 156);
 	background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
@@ -14,8 +12,8 @@ canvas {
 }
 
 #particles-js {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
 }
