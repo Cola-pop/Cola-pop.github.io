@@ -58,15 +58,15 @@ main{
   padding-top: 75px;
   
   section#card{
-    background: color(primary-dark);
+    // background: color(primary-dark);
     padding: 20px;
     color: #ffffff;
     text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary), 0 0 5px color(primary);
     margin: 1em auto;
-    border-radius: $borders;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    // border-radius: $borders;
+    // box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     width: 80%;
-    border: 5px solid color(primary);
+    // border: 5px solid color(primary);
     
     ul{
       list-style-type: none;
