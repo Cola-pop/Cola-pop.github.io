@@ -1,82 +1,56 @@
-@import url(//fonts.googleapis.com/css?family=Vibur);
-html,body{
-    height:100%
+.neon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  padding: 2vw 0;
+  margin: 0;
+  color: transparent;
+  text-align: center;
+  z-index: 0;
+  -webkit-user-select: none;
 }
 
-.logo {
-    text-align: center;
-    width: 65%;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.neon:nth-of-type(1) {
+  font: 50px Warnes;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #4451ff, 0 0 25px #4451ff, 0 0 5px #4451ff;
 }
 
-/* ff4444 */
-.logo b{
-    font: 100 10vh "Vibur";
-    color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #4451ff, 0 0 0.5em #4451ff, 0 0 0.1em #4451ff, 0 10px 3px #000;
-}
-.logo b span{
-    animation: blink linear infinite 2.5s;
-}
-@keyframes blink {
-    78% {
-        color: inherit;
-        text-shadow: inherit;
-    }
-    79%{
-        color: #333;
-    }
-    80% {
-        
-        text-shadow: none;
-    }
-    81% {
-        color: inherit;
-        text-shadow: inherit;
-    }
-    82% {
-        color: #333;
-        text-shadow: none;
-    }
-    83% {
-        color: inherit;
-        text-shadow: inherit;
-    }
-    92% {
-        color: #333;
-        text-shadow: none;
-    }
-    92.5% {
-        color: inherit;
-        text-shadow: inherit;
-    }
+.neon:nth-of-type(2) {
+  font: 50px 'Hello Denver';
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #4451ff, 0 0 25px #4451ff, 0 0 5px #4451ff;
+  letter-spacing: 2vw;
 }
 
+.neon:nth-of-type(2) span {
+  -webkit-animation: Flicker .23s infinite;
+          animation: Flicker .23s infinite;
+}
 
-/* follow me @nodws */
-#btn-twtr{
-    clear:both;
-    color:#fff;
-    border:2px solid;
-    border-radius:3px;
-    text-align:center;
-    text-decoration:none;
-    display:block;
-    font-family:sans-serif;
-    font-size:14px;
-    width:13em;
-    padding:5px 10px;
-    font-weight:600;
-    position:absolute;
-    bottom:20px;
-    left:0;
-    right:0;
-    margin:0 auto;
-    background:rgba(0,0,0,0.2);
-    box-shadow:0 0 0px 3px rgba(0,0,0,0.2);
-    opacity:0.4
-}#btn-twtr:hover{color:#fff;opacity:1}
+.neon:nth-of-type(3) {
+  font: 50px 'Neon Lights', 'Hello Denver';
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #4451ff, 0 0 25px #4451ff, 0 0 5px #4451ff;
+}
+
+@-webkit-keyframes Flicker {
+  60%, 80% {
+    text-shadow: 0 0 0.1vw #DCD5DA, 0.5vw 0.5vw 0.5vw #4451ff, -0.5vw -0.5vw 0.5vw #4451ff, 0.5vw -0.5vw 0.5vw rgba(224, 1, 141, 0.2), -0.5vw 0.5vw 0.5vw rgba(224, 1, 141, 0.2), 0 -0.5vw 0.5vw rgba(224, 1, 141, 0.2), 0 0.5vw 0.5vw rgba(224, 1, 141, 0.2), 0.5vw 0 0.5vw rgba(224, 1, 141, 0.2), 0 0 #FFF;
+  }
+  70%, 100% {
+    text-shadow: 0 0 0.1vw #FFEFFA, 0.8vw 0.8vw 0.8vw #4451ff, -0.8vw -0.8vw 0.8vw #4451ff, 0.8vw -0.8vw 0.8vw #4451ff, -0.8vw 0.8vw 0.5vw rgba(224, 1, 141, 0.4), 0 -0.8vw 0.5vw rgba(224, 1, 141, 0.4), 0 0.8vw 0.8vw rgba(224, 1, 141, 0.4);
+  }
+}
+
+@keyframes Flicker {
+  60%, 80% {
+    text-shadow: 0 0 0.1vw #DCD5DA, 0.5vw 0.5vw 0.5vw #4451ff, -0.5vw -0.5vw 0.5vw #4451ff, 0.5vw -0.5vw 0.5vw rgba(224, 1, 141, 0.2), -0.5vw 0.5vw 0.5vw rgba(224, 1, 141, 0.2), 0 -0.5vw 0.5vw rgba(224, 1, 141, 0.2), 0 0.5vw 0.5vw rgba(224, 1, 141, 0.2), 0.5vw 0 0.5vw rgba(224, 1, 141, 0.2), 0 0 #FFF;
+  }
+  70%, 100% {
+    text-shadow: 0 0 0.1vw #FFEFFA, 0.8vw 0.8vw 0.8vw #4451ff, -0.8vw -0.8vw 0.8vw #4451ff, 0.8vw -0.8vw 0.8vw #4451ff, -0.8vw 0.8vw 0.5vw rgba(224, 1, 141, 0.4), 0 -0.8vw 0.5vw rgba(224, 1, 141, 0.4), 0 0.8vw 0.8vw rgba(224, 1, 141, 0.4);
+  }
+}
+/*# sourceMappingURL=neon.css.map */
