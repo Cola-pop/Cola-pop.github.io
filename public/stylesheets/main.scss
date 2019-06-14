@@ -100,7 +100,6 @@ main{
     animation-duration: 4.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    padding-left: 100px;
     z-index: 2;
   }
   
@@ -140,6 +139,7 @@ main{
       margin: 50px auto 0 auto;
       padding: $padding;
       border: 5px solid color(primary);
+      z-index: 3000;
     }
   }
 }
