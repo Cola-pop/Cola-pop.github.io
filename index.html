@@ -5,10 +5,26 @@
   <link rel="stylesheet" type="text/css" href="public/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="public/stylesheets/main.css">
   <link rel="stylesheet" href="public/stylesheets/particles.css">
+
+  <script src="public/bootstrap/jquery-script.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function (){
+            $("#goto").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#spaceman").offset().top
+                }, 2000);
+            });
+        });
+  </script>
 </head>
 <body>
   <div id="particles-js"></div>
   <div id="title">hrag hayrabedian</div>
+  <button id="goto">goto</button>
   
   <div id="bg"></div>
   
@@ -47,7 +63,6 @@
     </section>
   </main>
   
-  <script src="public/bootstrap/jquery-script.js"></script>
   <script src="public/bootstrap/bootstrap.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="public/js/particles.js"></script>
