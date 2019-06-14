@@ -24,6 +24,12 @@ body, html{
 }
 
 body{
+  background: rgb(26, 188, 156);
+	background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  background-attachment: fixed;
+  background-repeat: repeat;
   font-family: 'Montserrat';
   margin: 0;
   background-color: black;

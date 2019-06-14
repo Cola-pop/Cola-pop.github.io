@@ -4,6 +4,10 @@ body, html {
 }
 
 body {
+  background: #1abc9c;
+  background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%);
+  background-attachment: fixed;
+  background-repeat: repeat;
   font-family: 'Montserrat';
   margin: 0;
   background-color: black;
