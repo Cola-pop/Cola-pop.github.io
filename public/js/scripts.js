@@ -1,7 +1,5 @@
 var help_button = document.getElementById('get_help');
 
-function getHelp(){
+help_button.addEventListener('click', () => {
     alert('( ͡° ͜ʖ ͡°)');
-}
-
-help_button.addEventListener('click', getHelp);
+});
