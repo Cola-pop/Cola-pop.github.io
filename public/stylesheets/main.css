@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-body, html {
+body,
+html {
   height: 100%;
 }
 
@@ -8,7 +9,7 @@ body {
   background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%);
   background-attachment: fixed;
   background-repeat: space;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin: 0;
   background-color: black;
   background-size: cover;
@@ -52,8 +53,8 @@ body #bg {
   height: 100%;
   position: absolute;
   z-index: -1;
-  -webkit-animation: blink .5s step-end infinite alternate;
-          animation: blink .5s step-end infinite alternate;
+  -webkit-animation: blink 0.5s step-end infinite alternate;
+          animation: blink 0.5s step-end infinite alternate;
 }
 
 main {
@@ -80,7 +81,7 @@ main section#card ul li {
 
 main section#card ul li span {
   position: absolute;
-  content: ' ';
+  content: " ";
   width: 30px;
   height: 30px;
   background-color: white;
@@ -97,8 +98,8 @@ main section#card ul li strong {
 main div#spaceman {
   -webkit-animation-name: floating;
           animation-name: floating;
-  -webkit-animation-duration: 4.5s;
-          animation-duration: 4.5s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
@@ -112,8 +113,8 @@ main div#spaceman {
             transform: translate(0, 0px);
   }
   65% {
-    -webkit-transform: translate(0, 15px);
-            transform: translate(0, 15px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(0, 0px);
@@ -127,8 +128,8 @@ main div#spaceman {
             transform: translate(0, 0px);
   }
   65% {
-    -webkit-transform: translate(0, 15px);
-            transform: translate(0, 15px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(0, 0px);
@@ -137,7 +138,7 @@ main div#spaceman {
 }
 
 main section#primary {
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 15px;
   text-align: center;
 }

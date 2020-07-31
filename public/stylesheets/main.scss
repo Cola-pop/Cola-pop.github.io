@@ -1,42 +1,55 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 $colors: (
-primary: #4451ff,
-primary-trans: rgba(68, 81, 255, 0.1),
-primary-light: lighten(#4451ff, 40%),
-primary-dark: darken(rgba(68, 81, 255, 0.3), 40%),
-accent: rgba(255, 246, 187, 0.35),
-border: #ff00ea,
-border-dark: darken(#ff00ea, 40%),
-default_color: #9305be,
-default_color_light: lighten(#9305be, 35%)
+  primary: #4451ff,
+  primary-trans: rgba(68, 81, 255, 0.1),
+  primary-light: lighten(#4451ff, 40%),
+  primary-dark: darken(rgba(68, 81, 255, 0.3), 40%),
+  accent: rgba(255, 246, 187, 0.35),
+  border: #ff00ea,
+  border-dark: darken(#ff00ea, 40%),
+  default_color: #9305be,
+  default_color_light: lighten(#9305be, 35%),
 );
 
 $padding: 15px;
 $borders: 15px;
 
-@function color($color-name){
-  @return map-get($colors, $color-name)
+@function color($color-name) {
+  @return map-get($colors, $color-name);
 }
 
-body, html{
+body,
+html {
   height: 100%;
 }
 
-body{
+body {
   background: rgb(26, 188, 156);
-	background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-  background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
   background-attachment: fixed;
   background-repeat: space;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin: 0;
   background-color: black;
   background-size: cover;
   background-position: center;
-  
-  #title{
+
+  #title {
     flex: 0 0 100%;
     padding: 2vw 0;
     padding-left: 5%;
@@ -47,15 +60,17 @@ body{
     text-align: center;
     letter-spacing: 4vw;
     color: white;
-    text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary), 0 0 5px color(primary);
+    text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary),
+      0 0 5px color(primary);
   }
-  
-  #shortcut-bar{
+
+  #shortcut-bar {
     padding: 0px 5% 3px 5%;
 
-    .customBtn{
+    .customBtn {
       color: white;
-      text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary), 0 0 5px color(primary);
+      text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary),
+        0 0 5px color(primary);
       background-color: rgba(255, 255, 255, 0);
       border-color: rgba(255, 255, 255, 0);
       letter-spacing: 0.5vw;
@@ -63,7 +78,7 @@ body{
   }
 
   // TODO transition time
-  #bg{
+  #bg {
     clip-path: polygon(100% 0, 0 0, 23% 100%);
     background-color: color(primary-trans);
     border-top: 5px solid color(primary);
@@ -71,43 +86,44 @@ body{
     height: 100%;
     position: absolute;
     z-index: -1;
-    animation: blink .5s step-end infinite alternate;
+    animation: blink 0.5s step-end infinite alternate;
   }
 }
 
-main{
+main {
   padding-top: 75px;
-  
-  section#card{
+
+  section#card {
     // background: color(primary-dark);
     padding: 20px;
     color: #ffffff;
-    text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary), 0 0 5px color(primary);
+    text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary),
+      0 0 5px color(primary);
     margin: 1em auto;
     // border-radius: $borders;
     // box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     width: 80%;
     // border: 5px solid color(primary);
-    
-    ul{
+
+    ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      
-      li{
+
+      li {
         margin-bottom: 10px;
-        
-        span{
+
+        span {
           position: absolute;
-          content: ' ';
+          content: " ";
           width: 30px;
           height: 30px;
           background-color: color(primary-light);
           border-radius: 50%;
           margin-right: 10px;
         }
-        
-        strong{
+
+        strong {
           display: inline-block;
           margin-left: max(40px);
           margin-top: 10px;
@@ -115,46 +131,55 @@ main{
       }
     }
   }
-  
-  div#spaceman{
+
+  div#spaceman {
     animation-name: floating;
-    animation-duration: 4.5s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     z-index: 2;
   }
-  
+
   @keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 15px); }
-    to   { transform: translate(0, -0px); }    
+    from {
+      transform: translate(0, 0px);
+    }
+    65% {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(0, -0px);
+    }
   }
-  
-  section#primary{
-    color: #FFFFFF;
+
+  section#primary {
+    color: #ffffff;
     padding: $padding;
     text-align: center;
-    
-    h1{
+
+    h1 {
       font-size: 3em;
       margin-top: 10px;
       text-transform: uppercase;
-      text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary), 0 0 5px color(primary);
+      text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary),
+        0 0 5px color(primary);
     }
-    
-    p{
+
+    p {
       font-size: 4em;
-      text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary), 0 0 5px color(primary);
+      text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary),
+        0 0 5px color(primary);
     }
-    
-    a#get_help{
+
+    a#get_help {
       color: #ffffff;
       border-radius: $borders;
       text-decoration: none;
       text-transform: uppercase;
       font-weight: bold;
       background-color: color(primary-dark);
-      text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary), 0 0 5px color(primary);
+      text-shadow: 2px 2px 2px color(primary), 0 0 25px color(primary),
+        0 0 5px color(primary);
       display: block;
       text-align: center;
       margin: 50px auto 0 auto;
