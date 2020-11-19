@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body,
 html {
   height: 100%;
@@ -9,22 +9,38 @@ body {
   background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%);
   background-attachment: fixed;
   background-repeat: space;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   margin: 0;
   background-color: black;
   background-size: cover;
   background-position: center;
 }
 
+body #navigation {
+  background-color: rgba(68, 81, 255, 1);
+}
+
+body .nav-link {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+body .nav-link:active,
+.nav-link:focus {
+  border-bottom: 1px solid #fff;
+}
+
 body #title {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
   padding: 2vw 0;
   padding-left: 5%;
   padding-right: 5%;
   font-size: 50px;
   margin: 0;
+  margin-top: 4vw;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 4vw;
@@ -46,15 +62,15 @@ body #shortcut-bar .customBtn {
 
 body #bg {
   -webkit-clip-path: polygon(100% 0, 0 0, 23% 100%);
-          clip-path: polygon(100% 0, 0 0, 23% 100%);
-  background-color: rgba(68, 81, 255, 0.1);
+  clip-path: polygon(100% 0, 0 0, 23% 100%);
+  background-color: rgba(68, 81, 255, 0.3);
   border-top: 5px solid #4451ff;
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
   -webkit-animation: blink 0.5s step-end infinite alternate;
-          animation: blink 0.5s step-end infinite alternate;
+  animation: blink 0.5s step-end infinite alternate;
 }
 
 main {
@@ -81,7 +97,7 @@ main section#card ul li {
 
 main section#card ul li span {
   position: absolute;
-  content: " ";
+  content: ' ';
   width: 30px;
   height: 30px;
   background-color: white;
@@ -97,43 +113,43 @@ main section#card ul li strong {
 
 main div#spaceman {
   -webkit-animation-name: floating;
-          animation-name: floating;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-name: floating;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   z-index: 2;
 }
 
 @-webkit-keyframes floating {
   from {
     -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
+    transform: translate(0, 0px);
   }
   65% {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
+    transform: translate(0, 0px);
   }
 }
 
 @keyframes floating {
   from {
     -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
+    transform: translate(0, 0px);
   }
   65% {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
+    transform: translate(0, 0px);
   }
 }
 
@@ -169,4 +185,3 @@ main section#primary a#get_help {
   padding: 15px;
   border: 5px solid #4451ff;
 }
-/*# sourceMappingURL=main.css.map */

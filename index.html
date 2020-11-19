@@ -18,10 +18,10 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $("#goto").click(function () {
-          $("html, body").animate(
+        $('#goto').click(function () {
+          $('html, body').animate(
             {
-              scrollTop: $("#spaceman").offset().top,
+              scrollTop: $('#title').offset().top,
             },
             1000
           );
@@ -30,12 +30,25 @@
     </script>
   </head>
   <body>
-    <!-- <div id="particles-js"></div> -->
-    <div id="title" style="padding-left: 80px;">hrag hayrabedian</div>
-    <button class="btn btn-secondary" id="goto">goto</button>
-
-    <div id="bg" style="display: block; margin-right: 60px;"></div>
-
+    <div id="particles-js"></div>
+    <div id="navigation" class="fixed-top">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a id="goto" class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+    <div id="title" style="padding-left: 80px">hrag hayrabedian</div>
+    <div id="bg" style="display: block; margin-right: 60px"></div>
     <main>
       <div class="container">
         <div class="row">
@@ -85,8 +98,7 @@
     </main>
 
     <script src="public/bootstrap/bootstrap.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
-    <!-- <script src="public/js/particles.js"></script> -->
-    <script type="text/javascript" src="public/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/public/js/particles.js"></script>
   </body>
 </html>
