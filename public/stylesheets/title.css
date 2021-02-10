@@ -28,12 +28,13 @@ h3 {
 .content-cont {
   margin-top: 1%;
   width: 100%;
-  left: 0;
-  right: 0;
   /* justify-content: center; */
 }
 .text-body {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
   display: inline-block;
   font-size: 16px;
 }
@@ -43,6 +44,25 @@ h3 {
   font-size: 5em;
   z-index: 1;
 }
+
+@media only screen and (max-width: 600px) {
+  .text-body {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .text-body h1 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 3em;
+    z-index: 1;
+  }
+}
+
 .text-body h1 span {
   color: transparent;
   background: linear-gradient(
