@@ -54,7 +54,7 @@ h3 {
   display: inline-block !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  top: 60% !important;
+  top: 450px !important;
   z-index: 2 !important;
   width: 40% !important;
   font-family: 'Neon', Arial, Helvetica, sans-serif !important;
