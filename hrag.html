@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hrag Hayrabedian</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="public/bootstrap/bootstrap.css"
+    />
+    <link rel="stylesheet" href="public/stylesheets/main.css" />
+    <link rel="stylesheet" href="public/stylesheets/particles.css" />
+
+    <script src="public/bootstrap/jquery-script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('#goto').click(function () {
+          $('html, body').animate(
+            {
+              scrollTop: $('#title').offset().top,
+            },
+            1000
+          );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="particles-js" class="height100"></div>
+    <div id="navigation" class="fixed-top">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a id="goto" class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+    <div id="title" style="padding-left: 80px">hrag hayrabedian</div>
+    <div id="bg" style="display: block; margin-right: 60px"></div>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <section id="card">
+              <p style="text-align: center">Welcome to my protfolio.</p>
+              <p>I'm a full stack web developer</p>
+            </section>
+          </div>
+          <div class="col-md-6" id="spaceman">
+            <img src="public/images/astro.png" alt="spaceman" />
+          </div>
+        </div>
+      </div>
+      <section id="primary">
+        <h1>Your personal web developer</h1>
+        <p>get help with anything</p>
+
+        <!-- <a href="#" id="get_help">Get help alright??</a> -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6"></div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+              <section id="card">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate nihil cumque laboriosam laudantium aliquid, tempore
+                illum totam dolores, repellat, vero accusantium sapiente rerum
+                odit ut maiores veritatis architecto esse mollitia!
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="public/bootstrap/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/public/js/particles.js"></script>
+  </body>
+</html>

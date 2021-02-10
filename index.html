@@ -1,91 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="es_MX">
   <head>
-    <title>Hrag Hayrabedian</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="public/bootstrap/bootstrap.css"
-    />
-    <link rel="stylesheet" href="public/stylesheets/main.css" />
-    <link rel="stylesheet" href="public/stylesheets/particles.css" />
-
-    <script src="public/bootstrap/jquery-script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(document).ready(function () {
-        $('#goto').click(function () {
-          $('html, body').animate(
-            {
-              scrollTop: $('#title').offset().top,
-            },
-            1000
-          );
-        });
-      });
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synthwave - Hrag</title>
+    <link rel="stylesheet" href="./public/stylesheets/index.css" />
+    <link rel="stylesheet" href="./public/stylesheets/title.css" />
+    <link rel="stylesheet" href="./public/stylesheets/particles.css" />
   </head>
-  <body>
-    <div id="particles-js"></div>
-    <div id="navigation" class="fixed-top">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a id="goto" class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
-    </div>
-    <div id="title" style="padding-left: 80px">hrag hayrabedian</div>
-    <div id="bg" style="display: block; margin-right: 60px"></div>
-    <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <section id="card">
-              <p style="text-align: center">Welcome to my protfolio.</p>
-              <p>I'm a full stack web developer</p>
-            </section>
-          </div>
-          <div class="col-md-6" id="spaceman">
-            <img src="public/images/astro.png" alt="spaceman" />
-          </div>
-        </div>
+
+  <body class="synthwave-background">
+    <div id="particles-js" class="height60"></div>
+    <div class="content-cont">
+      <div class="text-body">
+        <h1>
+          <span>Hayrabedian</span>
+          <h3>Hrag</h3>
+        </h1>
       </div>
-      <section id="primary">
-        <h1>Your personal web developer</h1>
-        <p>get help with anything</p>
-
-        <!-- <a href="#" id="get_help">Get help alright??</a> -->
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-lg-6 col-sm-6 col-6"></div>
-            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
-              <section id="card">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate nihil cumque laboriosam laudantium aliquid, tempore
-                illum totam dolores, repellat, vero accusantium sapiente rerum
-                odit ut maiores veritatis architecto esse mollitia!
-              </section>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="public/bootstrap/bootstrap.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="/public/js/particles.js"></script>
+    </div>
+    <div class="sun">
+      <div class="lines">
+        <div class="line" style="--pos: 1"></div>
+        <div class="line" style="--pos: 2"></div>
+        <div class="line" style="--pos: 3"></div>
+        <div class="line" style="--pos: 4"></div>
+        <div class="line" style="--pos: 5"></div>
+        <div class="line" style="--pos: 6"></div>
+        <div class="line" style="--pos: 7"></div>
+      </div>
+    </div>
+    <div class="road"></div>
   </body>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/396624/ltrade.js"></script>
+  <script>
+    $('.content-cont')
+      .find('h1')
+      .append(
+        '<div class="shine one"></div><div class="shine two"></div><div class="shine three"></div><div class="shine four"></div><div class="shine five"></div>'
+      );
+
+    $('.text-body')
+      .find('span')
+      .attr('text', $('.text-body').find('span').text());
+    $('.text-body').find('span').text('');
+  </script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="/public/js/particles.js"></script>
 </html>
