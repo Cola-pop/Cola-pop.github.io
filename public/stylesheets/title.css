@@ -50,14 +50,14 @@ h3 {
 }
 
 #view-more {
-  position: absolute;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 60%;
-  z-index: 2;
-  width: 40%;
-  font-family: 'Neon', Arial, Helvetica, sans-serif;
+  position: absolute !important;
+  display: inline-block !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  top: 60% !important;
+  z-index: 2 !important;
+  width: 40% !important;
+  font-family: 'Neon', Arial, Helvetica, sans-serif !important;
 }
 
 .text-body h1 {
