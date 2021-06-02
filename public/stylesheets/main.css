@@ -61,8 +61,8 @@ body #shortcut-bar .customBtn {
 }
 
 body #bg {
-  -webkit-clip-path: polygon(100% 0, 0 0, 23% 100%);
-  clip-path: polygon(100% 0, 0 0, 23% 100%);
+  -webkit-clip-path: polygon(0 0, 70% 100%, 100% 0);
+  clip-path: polygon(0 0, 70% 100%, 100% 0);
   background-color: rgba(68, 81, 255, 0.3);
   border-top: 5px solid #4451ff;
   width: 100%;
@@ -71,10 +71,6 @@ body #bg {
   z-index: -1;
   -webkit-animation: blink 0.5s step-end infinite alternate;
   animation: blink 0.5s step-end infinite alternate;
-}
-
-main {
-  padding-top: 75px;
 }
 
 main section#card {
@@ -186,8 +182,22 @@ main section#portfolioSection a#get_help {
   border: 5px solid #4451ff;
 }
 
-section {
+.fullHeight {
   height: 100vh;
+}
+
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
 }
 
 .tag {
