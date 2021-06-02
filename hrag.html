@@ -17,13 +17,38 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $('#goto').click(function () {
+        $('#introLink').click(function () {
           $('html, body').animate(
             {
               scrollTop: $('#title').offset().top,
             },
             1000
           );
+        });
+
+        $('#portfolioLink').click(function () {
+          $('html, body').animate(
+            {
+              scrollTop: $('#portfolioSection').offset().top,
+            },
+            1000
+          );
+        });
+
+        $(document).on('scroll', function () {
+          var pageTop = $(document).scrollTop();
+          var pageBottom = pageTop + $(window).height();
+          var tags = $('.tag');
+
+          for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i];
+
+            if ($(tag).position().top < pageBottom) {
+              $(tag).addClass('visible');
+            } else {
+              $(tag).removeClass('visible');
+            }
+          }
         });
       });
     </script>
@@ -33,10 +58,10 @@
     <div id="navigation" class="fixed-top">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a id="goto" class="nav-link active" href="#">Introduction</a>
+          <a id="introLink" class="nav-link active" href="#">Introduction</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
+          <a id="portfolioLink" class="nav-link" href="#">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
@@ -76,15 +101,12 @@
           </div>
         </div>
       </div>
-      <section id="primary">
-        <h1>Your personal web developer</h1>
-        <p>get help with anything</p>
-
-        <!-- <a href="#" id="get_help">Get help alright??</a> -->
+      <section class="tag yellow" id="portfolioSection">
+        <h1>Works and Projects</h1>
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-6 col-sm-6 col-6"></div>
-            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
               <section id="card">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptate nihil cumque laboriosam laudantium aliquid, tempore
@@ -96,7 +118,6 @@
         </div>
       </section>
     </main>
-
     <script src="public/bootstrap/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="/public/js/particles.js"></script>
