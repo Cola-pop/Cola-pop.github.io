@@ -161,6 +161,13 @@ main div#portfolioSection h1 {
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #4451ff, 0 0 25px #4451ff, 0 0 5px #4451ff;
 }
+h5 {
+  color: #fff;
+  font-size: 1em;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #4451ff, 0 0 25px #4451ff, 0 0 5px #4451ff;
+}
 
 main div#portfolioSection p {
   font-size: 4em;
@@ -235,4 +242,8 @@ html {
 
 .darkGrey {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.purple {
+  background-color: rgba(204, 0, 255, 0.2);
 }
