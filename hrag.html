@@ -9,49 +9,6 @@
     />
     <link rel="stylesheet" href="public/stylesheets/main.css" />
     <link rel="stylesheet" href="public/stylesheets/particles.css" />
-    <script src="public/bootstrap/jquery-script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(document).ready(function () {
-        $('#introLink').click(function () {
-          $('html, body').animate(
-            {
-              scrollTop: $('#title').offset().top,
-            },
-            1000
-          );
-        });
-
-        $('#portfolioLink').click(function () {
-          $('html, body').animate(
-            {
-              scrollTop: $('#portfolioSection').offset().top,
-            },
-            1000
-          );
-        });
-
-        $(document).on('scroll', function () {
-          var pageTop = $(document).scrollTop();
-          var pageBottom = pageTop + $(window).height();
-          var tags = $('.tag');
-
-          for (var i = 0; i < tags.length; i++) {
-            var tag = tags[i];
-
-            if ($(tag).position().top < pageBottom) {
-              $(tag).addClass('visible');
-            } else {
-              $(tag).removeClass('visible');
-            }
-          }
-        });
-      });
-    </script>
   </head>
   <body>
     <!-- <div id="particles-js" class="height100"></div> -->
@@ -100,41 +57,86 @@
             </section>
           </div>
         </div>
-      </div>
-      <section class="fullHeight tag darkGrey" id="portfolioSection">
-        <h1>Works and Projects</h1>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <section id="card">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate nihil cumque laboriosam laudantium aliquid, tempore
-                illum totam dolores, repellat, vero accusantium sapiente rerum
-                odit ut maiores veritatis architecto esse mollitia! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Voluptate nihil
-                cumque laboriosam laudantium aliquid, tempore illum totam
-                dolores, repellat, vero accusantium sapiente rerum odit ut
-                maiores veritatis architecto esse mollitia!
-              </section>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <section id="card">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate nihil cumque laboriosam laudantium aliquid, tempore
-                illum totam dolores, repellat, vero accusantium sapiente rerum
-                odit ut maiores veritatis architecto esse mollitia! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Voluptate nihil
-                cumque laboriosam laudantium aliquid, tempore illum totam
-                dolores, repellat, vero accusantium sapiente rerum odit ut
-                maiores veritatis architecto esse mollitia!
-              </section>
+        <div class="row fullHeight tag darkGrey" id="portfolioSection">
+          <div class="col-12">
+            <h1>Works and Projects</h1>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col col-xs-12 col-sm-12">
+                <section id="card">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptate nihil cumque laboriosam laudantium aliquid, tempore
+                  illum totam dolores, repellat, vero accusantium sapiente rerum
+                  odit ut maiores veritatis architecto esse mollitia! Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                  nihil cumque laboriosam laudantium aliquid, tempore illum
+                  totam dolores, repellat, vero accusantium sapiente rerum odit
+                  ut maiores veritatis architecto esse mollitia!
+                </section>
+              </div>
+              <div class="col col-xs-12 col-sm-12">
+                <section id="card">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptate nihil cumque laboriosam laudantium aliquid, tempore
+                  illum totam dolores, repellat, vero accusantium sapiente rerum
+                  odit ut maiores veritatis architecto esse mollitia! Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                  nihil cumque laboriosam laudantium aliquid, tempore illum
+                  totam dolores, repellat, vero accusantium sapiente rerum odit
+                  ut maiores veritatis architecto esse mollitia!
+                </section>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
+    <!-- <script src="public/bootstrap/jquery-script.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="public/bootstrap/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="/public/js/particles.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#introLink').click(function () {
+          $('html, body').animate(
+            {
+              scrollTop: $('#title').offset().top,
+            },
+            1000
+          );
+        });
+
+        $('#portfolioLink').click(function () {
+          $('html, body').animate(
+            {
+              scrollTop: $('#portfolioSection').offset().top,
+            },
+            1000
+          );
+        });
+
+        $(document).on('scroll', function () {
+          var pageTop = $(document).scrollTop();
+          var pageBottom = pageTop + $(window).height();
+          var tags = $('.tag');
+
+          for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i];
+
+            if ($(tag).position().top < pageBottom) {
+              $(tag).addClass('visible');
+            } else {
+              $(tag).removeClass('visible');
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
