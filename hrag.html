@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hrag Hayrabedian (WIP)</title>
+    <title>Hrag Harabetian</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -21,45 +21,53 @@
           <a id="portfolioLink" class="nav-link" href="#">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a id="linksLink" class="nav-link" href="#">Links</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Links</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </div>
-    <div id="title" style="padding-left: 80px">hrag hayrabedian</div>
+    <div id="title" style="padding-left: 80px">hrag harabetian</div>
     <div id="bg" style="display: block"></div>
     <main>
       <div class="container">
         <div class="row">
-          <div class="col col-xs-12 text-center" id="spaceman">
-            <img src="public/images/astro.png" alt="spaceman" />
+          <div class="col col-xs-12 text-center no-cpu" id="spaceman">
+            <img src="public/images/astro2.png" alt="spaceman" />
           </div>
           <div class="col col-xs-12">
             <section class="intro" id="card">
-              <p>Welcome to my portfolio.</p>
+              <p>Welcome to my brief portfolio.</p>
               <p>
                 I'm a full stack web developer with a Bachelor of Science degree
-                from Haigazian University at Beirut.
+                from Haigazian University at Beirut. Currently based in Rome,
+                Italy.
               </p>
               <p>
-                I have previously worked and interned at various software
-                companies. Most notably, my most recent employment was at
-                DataQuest as a software engineer, responsible for delivering
-                in-company webapps and console apps, as well as working on one
-                of the newest products of the company.
+                I have previously worked and interned as a developer at various
+                companies in various fields; from producing software solutions
+                in a team for insurance software to working with a team in a
+                blockchain based company for the development of front-end
+                projects.
               </p>
               <p>
-                Since then, I have been working as a freelance full stack
-                developer for various companies.
+                Since my university graduation, I have also worked as a
+                freelance full stack developer for various companies in need of
+                development services, often producing front-end modules or
+                back-end projects.
               </p>
             </section>
           </div>
         </div>
         <div class="row fullHeight tag darkGrey" id="portfolioSection">
           <div class="col-12">
-            <h1>Works and Projects</h1>
+            <h1>Some Works and Projects</h1>
+            <h6>
+              <em
+                >Items shown here are limited to some of my freelance work.</em
+              >
+            </h6>
           </div>
           <div class="col-12" style="margin-top: 16px">
             <div class="row">
@@ -101,13 +109,13 @@
                 <div
                   class="card"
                   style="
-                    background-color: rgba(255, 0, 119, 0.1);
+                    background-color: rgba(204, 0, 255, 0.2);
                     border-radius: 10%;
                   "
                 >
                   <div class="card-body">
                     <h5 class="card-title" style="font-size: 2em">
-                      LoraSev - WiP
+                      LoraSev - Back-end
                     </h5>
                   </div>
                   <img
@@ -117,7 +125,9 @@
                     style="width: 95%; margin-left: 2.5%"
                   />
                   <div class="card-body">
-                    <p class="card-text" style="font-size: 1em">Website</p>
+                    <p class="card-text" style="font-size: 1em">
+                      Back-end for website, as well as a brief CMS.
+                    </p>
                     <button
                       type="button"
                       class="btn btn-primary"
@@ -132,17 +142,44 @@
             </div>
           </div>
         </div>
+        <div style="height: 5vh"></div>
+        <div class="row fullHeight tag darkGreen" id="linksSection">
+          <div class="col-12" style="margin-top: 16px">
+            <div class="row">
+              <div class="col-12" style="margin-top: 16px">
+                <h1 class="card-title">Links</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-xs-12" style="margin-top: 16px">
+                <a href="https://github.com/Cola-pop" target="_blank">
+                  <img
+                    id="github"
+                    src="public/images/github.png"
+                    alt="github"
+                  />
+                </a>
+              </div>
+              <div class="col col-xs-12" style="margin-top: 16px">
+                <a
+                  href="https://www.linkedin.com/in/hrag-harabetian/"
+                  target="_blank"
+                >
+                  <img
+                    id="linkedin"
+                    src="public/images/linkedin.png"
+                    alt="linked"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <!-- <script src="public/bootstrap/jquery-script.js"></script> -->
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script> -->
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
     <script
@@ -158,7 +195,7 @@
         $('#introLink').click(function () {
           $('html, body').animate(
             {
-              scrollTop: $('#title').offset().top,
+              scrollTop: $('#title').offset().top - 50,
             },
             1000
           );
@@ -167,7 +204,16 @@
         $('#portfolioLink').click(function () {
           $('html, body').animate(
             {
-              scrollTop: $('#portfolioSection').offset().top,
+              scrollTop: $('#portfolioSection').offset().top - 100,
+            },
+            1000
+          );
+        });
+
+        $('#linksLink').click(function () {
+          $('html, body').animate(
+            {
+              scrollTop: $('#linksSection').offset().top - 100,
             },
             1000
           );
