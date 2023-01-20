@@ -15,7 +15,7 @@
     <div id="navigation" class="fixed-top">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a id="introLink" class="nav-link active" href="#">Introduction</a>
+          <a id="introLink" class="nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a id="portfolioLink" class="nav-link" href="#">Portfolio</a>
@@ -24,11 +24,12 @@
           <a id="linksLink" class="nav-link" href="#">Links</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a id="aboutLink" class="nav-link" href="#">About</a>
         </li>
       </ul>
     </div>
     <div id="title" style="padding-left: 80px">hrag harabetian</div>
+    <div style="height: 5vh"></div>
     <div id="bg" style="display: block"></div>
     <main>
       <div class="container">
@@ -38,24 +39,20 @@
           </div>
           <div class="col col-xs-12">
             <section class="intro" id="card">
-              <p>Welcome to my brief portfolio.</p>
               <p>
-                I'm a full stack web developer with a Bachelor of Science degree
-                from Haigazian University at Beirut. Currently based in Rome,
-                Italy.
+                For about a decade now, I have been coding and programming my
+                way along life, whether it has been for practice, work, or even
+                pleasure. Given the technologies nowadays, the playground to
+                experiment and learn seems like an endless ocean, waiting to be
+                infinitely explored.
               </p>
               <p>
-                I have previously worked and interned as a developer at various
-                companies in various fields; from producing software solutions
-                in a team for insurance software to working with a team in a
-                blockchain based company for the development of front-end
-                projects.
-              </p>
-              <p>
-                Since my university graduation, I have also worked as a
-                freelance full stack developer for various companies in need of
-                development services, often producing front-end modules or
-                back-end projects.
+                Looking back at it, I remember the very first line of code that
+                I wrote after finding an old programming book from the 1990's.
+                The C language blew my mind back then, as I typed what seemed to
+                be an alien syntax that would generate magic on my screen that
+                said "Hello World". Ever since that hot summer day, my path to
+                being a programmer started.
               </p>
             </section>
           </div>
@@ -151,7 +148,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col col-xs-12" style="margin-top: 16px">
+              <div class="col-xs-12 col">
                 <a href="https://github.com/Cola-pop" target="_blank">
                   <img
                     id="github"
@@ -160,7 +157,7 @@
                   />
                 </a>
               </div>
-              <div class="col col-xs-12" style="margin-top: 16px">
+              <div class="col-xs-12 col">
                 <a
                   href="https://www.linkedin.com/in/hrag-harabetian/"
                   target="_blank"
@@ -168,12 +165,75 @@
                   <img
                     id="linkedin"
                     src="public/images/linkedin.png"
-                    alt="linked"
+                    alt="linkedin"
                   />
                 </a>
               </div>
             </div>
           </div>
+        </div>
+        <div style="height: 5vh"></div>
+        <div class="row fullHeight tag" id="aboutSection">
+          <div class="col-12" style="margin-top: 16px">
+            <div class="row">
+              <div class="col-12" style="margin-top: 16px">
+                <h1 class="card-title">About</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6 col-xs-12" style="margin-top: 16px">
+                <p>
+                  I'm a full stack web developer with a Bachelor of Science
+                  degree from Haigazian University at Beirut. Currently based in
+                  Rome, Italy.
+                </p>
+                <p>
+                  Having previously worked and interned as a developer at
+                  various companies that operate within various fields, I have
+                  experienced producing software solutions in a team to fulfill
+                  insurance business needs to working with a team in a
+                  blockchain based company for the development of front-end
+                  projects.
+                </p>
+                <p>
+                  Since my university graduation, I have also worked as a
+                  freelance full stack developer for various companies in need
+                  of development services.
+                </p>
+                <p>
+                  Working as a front-end developer aside, I have planned and
+                  designed back-end projects that had to fit accordingly to the
+                  given requirements; by having established experience in React
+                  as well as Node.js, I find it rather comfortable to work with
+                  team members that are out to find solutions.
+                </p>
+                <p>
+                  Along the way, I tend to go off my main development approaches
+                  and experiment with other technologies or methods that simply
+                  seem interesting to me which may result in its use during my
+                  work; for example, I currently am keen on learning advanced
+                  unit testing methods, as well as be involved in a new
+                  language, such as Rust.
+                </p>
+                <p>
+                  A developer should not be limited to any bounds as they should
+                  cross any obstacle or limit, and result with the challenge
+                  resolved.
+                </p>
+                <p><em>January 2023</em></p>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+          </div>
+        </div>
+        <div style="height: 5vh"></div>
+        <div class="row fullHeight tag" id="backToTop">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 col-xs-12">
+            <img id="top" src="public/images/top.png" alt="top" />
+          </div>
+          <div class="col-md-3"></div>
         </div>
         <div style="height: 5vh"></div>
       </div>
@@ -215,6 +275,24 @@
           $('html, body').animate(
             {
               scrollTop: $('#linksSection').offset().top - 100,
+            },
+            1000
+          );
+        });
+
+        $('#aboutLink').click(function () {
+          $('html, body').animate(
+            {
+              scrollTop: $('#aboutSection').offset().top - 100,
+            },
+            1000
+          );
+        });
+
+        $('#top').click(function () {
+          $('html, body').animate(
+            {
+              scrollTop: $('#title').offset().top - 50,
             },
             1000
           );
