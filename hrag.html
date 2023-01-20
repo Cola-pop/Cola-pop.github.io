@@ -175,6 +175,7 @@
             </div>
           </div>
         </div>
+        <div style="height: 5vh"></div>
       </div>
     </main>
     <script
@@ -217,6 +218,22 @@
             },
             1000
           );
+        });
+
+        $('#github').mouseenter(function () {
+          $('#github').css('background-color', 'rgba(3, 53, 14, 0.5)');
+        });
+
+        $('#github').mouseleave(function () {
+          $('#github').css('background-color', 'transparent');
+        });
+
+        $('#linkedin').mouseenter(function () {
+          $('#linkedin').css('background-color', 'rgba(3, 53, 14, 0.5)');
+        });
+
+        $('#linkedin').mouseleave(function () {
+          $('#linkedin').css('background-color', 'transparent');
         });
 
         $(document).on('scroll', function () {

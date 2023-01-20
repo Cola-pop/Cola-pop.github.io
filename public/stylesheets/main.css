@@ -211,7 +211,8 @@ main div#linksSection h1 {
 
 main div#linksSection img {
   transition: all 0.6s ease-in;
-  max-width: 524px;
+  max-width: 578px;
+  border-radius: 50%;
 }
 
 #github {
@@ -219,7 +220,7 @@ main div#linksSection img {
 }
 
 #linkedin {
-  transform: scale(0.9);
+  transform: scale(0.66);
 }
 
 .fullHeight {
