@@ -237,6 +237,7 @@
         </div>
         <div style="height: 5vh"></div>
       </div>
+      <div class="custom-cursor"></div>
     </main>
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -251,7 +252,50 @@
     <script src="public/bootstrap/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="/public/js/particles.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <script>
+      document.addEventListener('DOMContentLoaded', function (event) {
+        let cursor = document.querySelector('.custom-cursor');
+        let links = document.querySelectorAll('a, button, #top');
+        let initCursor = false;
+
+        for (let i = 0; i < links.length; i++) {
+          let selfLink = links[i];
+
+          selfLink.addEventListener('mouseover', function () {
+            cursor.classList.add('custom-cursor--link');
+          });
+          selfLink.addEventListener('mouseout', function () {
+            cursor.classList.remove('custom-cursor--link');
+          });
+        }
+
+        window.onmousemove = function (e) {
+          let mouseX = e.clientX;
+          let mouseY = e.clientY;
+
+          if (!initCursor) {
+            // cursor.style.opacity = 1;
+            TweenLite.to(cursor, 0.3, {
+              opacity: 1,
+            });
+            initCursor = true;
+          }
+
+          TweenLite.to(cursor, 0, {
+            top: mouseY + 'px',
+            left: mouseX + 'px',
+          });
+        };
+
+        window.onmouseout = function (e) {
+          TweenLite.to(cursor, 0.3, {
+            opacity: 0,
+          });
+          initCursor = false;
+        };
+      });
+
       $(document).ready(function () {
         $('#introLink').click(function () {
           $('html, body').animate(
@@ -296,22 +340,6 @@
             },
             1000
           );
-        });
-
-        $('#github').mouseenter(function () {
-          $('#github').css('background-color', 'rgba(3, 53, 14, 0.5)');
-        });
-
-        $('#github').mouseleave(function () {
-          $('#github').css('background-color', 'transparent');
-        });
-
-        $('#linkedin').mouseenter(function () {
-          $('#linkedin').css('background-color', 'rgba(3, 53, 14, 0.5)');
-        });
-
-        $('#linkedin').mouseleave(function () {
-          $('#linkedin').css('background-color', 'transparent');
         });
 
         $(document).on('scroll', function () {
